@@ -5,7 +5,7 @@ use Acme::LOLCAT ();
 use base qw(POE::Filter);
 use vars qw($VERSION);
 
-$VERSION = '0.02';
+$VERSION = '1.00';
 
 sub new {
   my $class = shift;
@@ -39,6 +39,14 @@ sub get_pending {
 
 sub put {
   return;
+}
+
+sub clone {
+  my $self = shift;
+  my $nself = { };
+  $nself->{$_} = $self->{$_} for keys %{ $self };
+  $nself->{BUFFER} = [ ];
+  return bless $nself, ref $self;
 }
 
 1;
@@ -82,7 +90,7 @@ Creates a new POE::Filter::LOLCAT object.
 
 =item get_one
 
-Takes an arrayref which is contains lines of text, returns an arrayref of LOLCAT translated text.
+TAKEZ AN ARRAYREF WHICH AR TEH CONTAINZ LINEZ OF TEXT, RETURNZ AN ARRAYREF OV LOLCAT TRANSLATED TEXT. KTHX.
 
 =item get_pending
 
@@ -91,6 +99,10 @@ Returns the filter's partial input buffer.
 =item put
 
 TEH PUT METHOD AR TEH NOT IMPLEMENTED. KTHNX!
+
+=item clone
+
+MAKEZ COPY OV TEH FILTR, AND CLEARZ TEH COPYZ BUFFR.  KTHX.
 
 =back
 
