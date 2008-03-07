@@ -5,6 +5,8 @@ version_from 'lib/POE/Filter/LOLCAT.pm';
 abstract_from 'lib/POE/Filter/LOLCAT.pm';
 license 'perl';
 build_requires 'Test::More' => 0.47;
+requires 'warnings::compat' => 0 if $] < 5.006;
 requires 'POE' => 0.38;
+requires 'POE::Filter' => 0;
 requires 'Acme::LOLCAT' => 0;
 WriteAll;
