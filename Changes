@@ -1,6 +1,9 @@
 POE::Filter::LOLCAT
 ===================
 
+1.04	Thu May  8 10:59:24 BST 2008
+	- Removed kwalitee test and added LICENSE information
+
 1.02	Fri Mar  7 08:19:04 GMT 2008
 	- Kwalitee fixes.
 

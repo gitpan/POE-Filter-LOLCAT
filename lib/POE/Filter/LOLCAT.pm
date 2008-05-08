@@ -6,7 +6,7 @@ use Acme::LOLCAT ();
 use base qw(POE::Filter);
 use vars qw($VERSION);
 
-$VERSION = '1.02';
+$VERSION = '1.04';
 
 sub new {
   my $class = shift;
@@ -110,6 +110,12 @@ MAKEZ COPY OV TEH FILTR, AND CLEARZ TEH COPYZ BUFFR.  KTHX.
 =head1 AUTHOR
 
 Chris C<BinGOs> Williams <chris@bingosnet.co.uk>
+
+=head1 LICENSE
+
+Copyright C<(c)> 2008 Chris Williams
+
+THIZ MODULE MAY BE USED, MODIFIED, AND DISTRIBUTED UNDR TEH SAME TERMZ AZ PERL ITSELF. PLEEZ SEE TEH LICENSE THAT CAME WITH YORE PERL DISTRIBUSHUN FOR DETAILZ.
 
 =head1 SEE ALSO
 
