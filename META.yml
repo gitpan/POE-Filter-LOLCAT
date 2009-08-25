@@ -22,9 +22,9 @@ no_index:
 provides:
   POE::Filter::LOLCAT:
     file: lib/POE/Filter/LOLCAT.pm
-    version: 1.08
+    version: 1.10
 requires:
-  Acme::LOLCAT: "\z\z\x05"
+  Acme::LOLCAT: 0.0.5
   POE: 1.004
   POE::Filter: 0
   perl: 5.6.0
@@ -32,4 +32,4 @@ resources:
   homepage: http://github.com/bingos/poe-filter-lolcat/tree
   license: http://dev.perl.org/licenses/
   repository: git://github.com/bingos/poe-filter-lolcat.git
-version: 1.08
+version: 1.10
